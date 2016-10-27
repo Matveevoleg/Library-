@@ -1,0 +1,109 @@
+--- !ruby/object:Library
+books:
+- &1 !ruby/object:Book
+  title: Book_1
+  author: &11 !ruby/object:Author
+    name: Author-1
+    biography: Author_1_biography
+- &2 !ruby/object:Book
+  title: Book_2
+  author: &12 !ruby/object:Author
+    name: Author-2
+    biography: Author_2_biography
+- &3 !ruby/object:Book
+  title: Book_3
+  author: &13 !ruby/object:Author
+    name: Author-3
+    biography: Author_3_biography
+- &5 !ruby/object:Book
+  title: Book_4
+  author: &14 !ruby/object:Author
+    name: Author-4
+    biography: Author_4_biography
+- &7 !ruby/object:Book
+  title: Book_5
+  author: &15 !ruby/object:Author
+    name: Author-5
+    biography: Author_5_biography
+orders:
+- !ruby/object:Order
+  book: *1
+  reader: &4 !ruby/object:Reader
+    name: Reader_1
+    email: reader_1@gmail.com
+    city: city_1
+    street: street_1
+    house: 1
+  date: 2016-10-27 18:06:50.282772789 +03:00
+- !ruby/object:Order
+  book: *2
+  reader: &8 !ruby/object:Reader
+    name: Reader_2
+    email: reader_2@gmail.com
+    city: city_2
+    street: street_2
+    house: 2
+  date: 2016-10-27 18:06:50.282774934 +03:00
+- !ruby/object:Order
+  book: *3
+  reader: &6 !ruby/object:Reader
+    name: Reader_3
+    email: reader_3@gmail.com
+    city: city_3
+    street: street_3
+    house: 3
+  date: 2016-10-27 18:06:50.282776219 +03:00
+- !ruby/object:Order
+  book: *1
+  reader: &9 !ruby/object:Reader
+    name: Reader_4
+    email: reader_4@gmail.com
+    city: city_4
+    street: street_4
+    house: 4
+  date: 2016-10-27 18:06:50.282777179 +03:00
+- !ruby/object:Order
+  book: *2
+  reader: &10 !ruby/object:Reader
+    name: Reader_5
+    email: reader_5@gmail.com
+    city: city_5
+    street: street_5
+    house: 5
+  date: 2016-10-27 18:06:50.282778087 +03:00
+- !ruby/object:Order
+  book: *2
+  reader: *4
+  date: 2016-10-27 18:06:50.282778979 +03:00
+- !ruby/object:Order
+  book: *2
+  reader: *4
+  date: 2016-10-27 18:06:50.282779835 +03:00
+- !ruby/object:Order
+  book: *5
+  reader: *6
+  date: 2016-10-27 18:06:50.282780839 +03:00
+- !ruby/object:Order
+  book: *7
+  reader: *8
+  date: 2016-10-27 18:06:50.282781896 +03:00
+- !ruby/object:Order
+  book: *3
+  reader: *9
+  date: 2016-10-27 18:06:50.282782830 +03:00
+- !ruby/object:Order
+  book: *2
+  reader: *10
+  date: 2016-10-27 18:06:50.282783728 +03:00
+readers:
+- *4
+- *8
+- *6
+- *9
+- *10
+authors:
+- *11
+- *12
+- *13
+- *14
+- *15
