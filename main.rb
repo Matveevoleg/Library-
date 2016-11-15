@@ -44,11 +44,12 @@ lib = Library.new([book_1, book_2, book_3, book_4, book_5],
 lib.who_often_takes_the_book
 lib.what_is_the_most_popular_book
 lib.count_of_orders_top_3_books
+
 lib.save_to_yaml
 
 puts "\n Load library \n\n"
 
-data = Library.load_from_yaml('library.yaml')
+data = IOModule.load_from_yaml('library.yaml')
 lib2 = Library.new(data.books, data.orders, data.readers,data.authors)
 
 lib2.who_often_takes_the_book

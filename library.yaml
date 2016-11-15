@@ -34,7 +34,7 @@ orders:
     city: city_1
     street: street_1
     house: 1
-  date: 2016-10-27 18:06:50.282772789 +03:00
+  date: 2016-11-15 15:22:42.085491640 +02:00
 - !ruby/object:Order
   book: *2
   reader: &8 !ruby/object:Reader
@@ -43,7 +43,7 @@ orders:
     city: city_2
     street: street_2
     house: 2
-  date: 2016-10-27 18:06:50.282774934 +03:00
+  date: 2016-11-15 15:22:42.085493787 +02:00
 - !ruby/object:Order
   book: *3
   reader: &6 !ruby/object:Reader
@@ -52,7 +52,7 @@ orders:
     city: city_3
     street: street_3
     house: 3
-  date: 2016-10-27 18:06:50.282776219 +03:00
+  date: 2016-11-15 15:22:42.085495031 +02:00
 - !ruby/object:Order
   book: *1
   reader: &9 !ruby/object:Reader
@@ -61,7 +61,7 @@ orders:
     city: city_4
     street: street_4
     house: 4
-  date: 2016-10-27 18:06:50.282777179 +03:00
+  date: 2016-11-15 15:22:42.085495996 +02:00
 - !ruby/object:Order
   book: *2
   reader: &10 !ruby/object:Reader
@@ -70,31 +70,31 @@ orders:
     city: city_5
     street: street_5
     house: 5
-  date: 2016-10-27 18:06:50.282778087 +03:00
+  date: 2016-11-15 15:22:42.085496910 +02:00
 - !ruby/object:Order
   book: *2
   reader: *4
-  date: 2016-10-27 18:06:50.282778979 +03:00
+  date: 2016-11-15 15:22:42.085497788 +02:00
 - !ruby/object:Order
   book: *2
   reader: *4
-  date: 2016-10-27 18:06:50.282779835 +03:00
+  date: 2016-11-15 15:22:42.085498652 +02:00
 - !ruby/object:Order
   book: *5
   reader: *6
-  date: 2016-10-27 18:06:50.282780839 +03:00
+  date: 2016-11-15 15:22:42.085499500 +02:00
 - !ruby/object:Order
   book: *7
   reader: *8
-  date: 2016-10-27 18:06:50.282781896 +03:00
+  date: 2016-11-15 15:22:42.085500336 +02:00
 - !ruby/object:Order
   book: *3
   reader: *9
-  date: 2016-10-27 18:06:50.282782830 +03:00
+  date: 2016-11-15 15:22:42.085501174 +02:00
 - !ruby/object:Order
   book: *2
   reader: *10
-  date: 2016-10-27 18:06:50.282783728 +03:00
+  date: 2016-11-15 15:22:42.085502020 +02:00
 readers:
 - *4
 - *8
