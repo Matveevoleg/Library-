@@ -8,7 +8,7 @@ module IOModule
     end
   end
 
-  def self.load_from_yaml(path)
+  def load_from_yaml(path)
     data = YAML.load(File.read(path))
     raise 'Error' if data.nil?
     data
