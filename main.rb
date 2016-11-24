@@ -41,16 +41,17 @@ lib = Library.new([book_1, book_2, book_3, book_4, book_5],
                   [author1, author2, author3, author4, author5])
 
 
-lib.who_often_takes_the_book
-lib.what_is_the_most_popular_book
-lib.count_of_orders_top_3_books
+puts ' - ' + lib.who_often_takes_the_book + ' often takes the book'
+puts " - The most popular book is \'" + lib.what_is_the_most_popular_book + "\'"
+puts ' - ' + lib.count_of_orders_top_3_books + ' people ordered one of the three most popular books'
+
+
 lib.save_to_yaml
 
 puts "\n Load library \n\n"
 
-data = Library.load_from_yaml('library.yaml')
-lib2 = Library.new(data.books, data.orders, data.readers,data.authors)
+lib2 = Library.load_library('library.yaml')
 
-lib2.who_often_takes_the_book
-lib2.what_is_the_most_popular_book
-lib2.count_of_orders_top_3_books
+puts ' - ' + lib.who_often_takes_the_book + ' often takes the book'
+puts " - The most popular book is \'" + lib.what_is_the_most_popular_book + "\'"
+puts ' - ' + lib.count_of_orders_top_3_books + ' people ordered one of the three most popular books'
